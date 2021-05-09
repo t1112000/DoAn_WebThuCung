@@ -1,0 +1,394 @@
+﻿* {
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior:smooth;
+}
+
+#main {
+    width:1368px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/* Header */
+
+#hr {
+    position:relative;
+    background:url("../Image/hr.jpg") top center / cover no-repeat;
+    padding-top:6px;
+    width:100%;
+    margin-top:8px;
+}
+
+#header {
+    position:relative;
+    margin:15px 0;
+}
+
+#header .icon {
+    display:inline-block;
+    float:left;
+    margin:0 70px;
+}
+
+#nav li{
+    display:inline-block;
+    line-height:70px;
+    margin-right:50px;
+    text-transform:uppercase;
+    font-size:14px;
+    cursor:pointer;
+}
+
+    #nav li:hover a {
+        background-color:#EFAE5C;
+    }
+
+    #nav li a {
+        text-decoration:none;
+        color:#000;
+        padding:5px 10px;
+        border-radius:20px;
+        font-weight:bold;
+    }
+
+#header .btn {
+    position:absolute;
+    top:0;
+    right:0;
+    line-height:70px;
+    font-size:25px;
+    cursor:pointer;
+}
+
+#header .search-icon {
+    color:#000;
+    margin-right:100px;
+    padding:20px;
+}
+
+#header .search-icon:hover,
+#header .log-icon:hover {
+    opacity:0.4;
+}
+
+#header .log-icon {
+    color:#000;
+    margin-right:40px;
+    padding:20px;
+}
+
+#slider img {
+    width:100%;
+}
+
+/* Content */
+#content,
+#footer .footer-list,
+#coppy-right .content-coppy,
+#help {
+    width:1200px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/* Tray */
+
+#img-list {
+    display:flex;
+    width:100%;
+    margin:40px 0;
+    justify-content:space-between;
+}
+
+    #img-list .img-item {
+        width:calc(100%/3);
+    }
+        #slider img,
+        #content .info-item img,
+        #content .content-banner img,
+        #slider-footer img,
+        #img-list .img-item {
+            border-radius:10px;
+            box-shadow:0 0 10px rgba(0,0,0,0.9);
+        }
+
+#content .item-img{
+    border:1px solid #ccc;
+    width:275px;
+    height:270px;
+    padding:50px 50px;
+    margin-top:40px;
+    cursor:pointer;
+}
+
+    #content .item-img:hover {
+        opacity:0.6;
+    }
+
+#content .list-item {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+}
+
+#content .text-heading {
+    text-align:center;
+    text-transform:uppercase;
+    font-weight:bold;
+    font-size:30px;
+    font-family: Tahoma;
+    color:#785051;
+    margin-top:40px;
+    text-shadow:0 0 3px rgba(0,0,0,0.6);
+}
+
+#content .content {
+    text-align:center;
+}
+
+#content .text {
+    font-weight:500;
+    margin:10px 0;
+    font-size:16px;
+}
+
+#content .price {
+    color:#E91E00;i
+    font-weight:bold;
+}
+
+#content .content-banner img {
+    position:relative;
+    background: top center / cover no-repeat;
+    width:100%;
+    margin-top:40px;
+}
+
+/* INFO */
+
+#content .info-list {
+    display:flex;
+    margin:40px 0;
+    width:100%;
+    justify-content:space-between;
+}
+
+#content .info-item {
+    width:calc(100%/3);
+}
+
+#content .info-text {
+    display:block;
+    text-decoration:none;
+    margin-top:20px;
+    text-transform:uppercase;
+    color:#634D35;
+    font-weight:bold;
+}
+
+    #content .info-text:hover {
+        opacity:0.6;
+    }
+
+#slider-footer {
+    position:relative;
+    background: top center / cover no-repeat;
+    width:100%;
+    margin:40px 0;
+}
+
+#help .icon {
+    font-size:30px;
+    border:1px solid #000;
+    padding: 21px;
+    border-radius: 50%;
+    margin-right:18px;
+    opacity:0.6;
+}
+
+#help .help-list {
+    display:flex;
+    flex-flow:nowrap row;
+    margin-bottom:40px;
+}
+
+#help .help-item {
+    display:flex;
+    justify-content:space-between;
+}
+
+hr {
+    margin:10px 0;
+    height:5px;
+    opacity:0.6;
+    background-color:#000;
+    width:30%;
+}
+
+#help .help-heading {
+    font-size:16px;
+    text-transform:uppercase;
+    font-weight:bold;
+}
+
+#help .help-text {
+    opacity:0.8;
+    font-size:15px;
+}
+
+/* Footer */
+
+.bold {
+    font-weight:bold !important;
+}
+
+#footer {
+    background-color:#EDAF5C;
+    color:#fff;
+}
+
+    #footer .footer-list {
+        display:flex;
+        flex-flow:nowrap row;
+        justify-content:space-between;
+    }
+
+    #footer .icon-banking,
+    #footer .icon-footer {
+        width: 80%;
+        margin-left: -20px;
+        margin-bottom: 10px;
+    }
+
+    #footer .footer-item{
+        width:100%;
+        margin:40px 0;
+        display:flex;
+        flex-flow:column;
+    }
+
+    #footer .text-footer {
+        margin-bottom:10px;
+        font-weight:bold;
+    }
+
+    #footer span {
+        font-weight:500;
+        opacity:0.9;
+    }
+
+    #footer i {
+        margin-bottom:10px;
+    }
+
+    #footer .heading-footer {
+        text-transform:uppercase;
+        margin:20px 0;
+    }
+
+#coppy-right {
+    background-color:#000;
+    width:100%;
+}
+
+    #coppy-right .content-coppy {
+        text-align:center;
+        color:#fff;
+        padding:16px 0;
+    }
+
+
+/* Form Login */
+
+.login {
+    background:url("../Image/bg-login.jpg") top center / cover no-repeat;
+    padding-top:50%;
+    margin-top:40px;
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+    color:#fff;
+    position:relative;
+}
+
+.icon-login {
+    margin-right:10px;
+    font-size:24px;
+}
+
+.login-item {
+    padding:20px 0;
+    border-bottom:1px solid #fff;
+    width:100%;
+    margin-bottom:20px;
+}
+
+.login-heading {
+    text-align:center;
+}
+
+.login-input {
+    background-color:transparent;
+    border:none;
+    outline:none;
+    padding:5px;
+    color:#fff;
+}
+
+    .login-input::placeholder {
+        color:#fff;
+    }
+
+.login-main {
+    position:absolute;
+    width:30%;
+    top:0;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:100px;
+    box-shadow:0 0 10px rgba(0,0,0,0.8);
+    padding:50px;
+    background-color:rgba(0,0,0,0.6);
+}
+
+.forgot-password{
+    float:right;
+    text-decoration:none;
+    color:#fff;
+    font-size:13px;
+    margin:25px 0;
+}
+    .login-btn input:hover,
+    .forgot-password:hover {
+        opacity:0.6;
+    }
+
+.login-btn{
+    clear:both;
+    text-align:center;
+}
+
+    .login-btn input {
+        outline:none;
+        border:none;
+        font-family: 'Lucida Bright';
+        letter-spacing:3px;
+        background: -webkit-linear-gradient(right,#00dbde,#fc00ff,#00dbde,#fc00ff);
+        font-size:24px;
+        color:#fff;
+        font-weight:500;
+        padding:10px 0;
+        text-transform:uppercase;
+        border-radius:10px;
+        width:100%;
+        cursor:pointer;
+        box-shadow:0 0 10px rgba(0,0,0,0.8);
+    }

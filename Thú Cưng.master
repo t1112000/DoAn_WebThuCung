@@ -1,0 +1,123 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Thú Cưng.master.cs" Inherits="ThuCung" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="StyleSheet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="main">
+        <div id="hr"></div>
+        <div id="header">
+            <div class="icon">
+                <img src="Image/icon.png" />
+            </div>
+            <ul id="nav">
+                <li><a href="Trang Chủ.aspx">Trang Chủ</a></li>
+                <li><a href="#slider">Giới Thiệu</a></li>
+                <li><a href="#content-tray">Thức Ăn</a></li>
+                <li><a href="#content-food">Cửa Hàng</a></li>
+                <li><a href="#tintuc">Tin Tức</a></li>
+                <li><a href="#slider-footer">Liên Hệ</a></li>
+            </ul>
+            <div class="btn">
+                <a href="#"><i class="search-icon fas fa-search"></i></a>
+            </div>
+            <div class="btn">
+                <a href="Login.aspx"><i class="log-icon fas fa-user"></i></a>
+            </div>
+        </div>
+        <div id="slider">
+            <img src="Image/slider.jpg" />
+        </div>
+        <div id="content">
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="slider-footer">
+            <img src="Image/banner3.jpg" />
+        </div>
+        <div id="help">
+            <div class="help-list">
+                <div class="help-item">
+                    <i class="icon fas fa-truck"></i>
+                    <div class="help-content">
+                        <h3 class="help-heading">Giao Hàng 24/24</h3>
+                        <hr/>
+                        <p class="help-text">Miễn phí giao hàng cho đơn hàng trên 5 triệu</p>
+                    </div>
+                </div>
+                <div class="help-item" style="margin-left:25px">
+                    <i class="icon fas fa-shield-alt"></i>
+                    <div class="help-content">
+                        <h3 class="help-heading">Bảo Hành</h3>
+                        <hr />
+                        <p class="help-text">Bảo hành 1 đổi 1 trong vòng 1 năm</p>
+                    </div>
+                </div>
+                <div class="help-item" style="margin:0 25px">
+                    <i class="icon fas fa-headset"></i>
+                    <div class="help-content">
+                        <h3 class="help-heading">Hỗ Trợ 24/7</h3>
+                        <hr />
+                        <p class="help-text">Miễn phí giao hàng cho đơn hàng trên 5 triệu</p>
+                    </div>
+                </div>
+                <div class="help-item">
+                    <i class="icon fas fa-vote-yea"></i>
+                    <div class="help-content">
+                        <h3 class="help-heading">Đảm Bảo Chất Lượng</h3>
+                        <hr />
+                        <p class="help-text">Miễn phí giao hàng cho đơn hàng trên 5 triệu</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="footer-list">
+                <div class="footer-item">
+                    <img class="icon-footer" src="Image/icon-footer.png" />
+                    <p class="text-footer">Điện Thoại: <span>028.6271.7789</span></p>
+                    <p class="text-footer">Fax: <span>028.6271.7789</span></p>
+                    <p class="text-footer">Hotline: <span>0903.874.279</span></p>
+                    <p class="text-footer">Email: <span>me@gmail.com</span></p>
+                    <p class="text-footer">Địa Chỉ: <span>672A41 Phan Văn Trị, KDC Cityland Park Hills, Phường 10, Quận Gò Vấp, Thành Phố Hồ Chí Minh.</span></p>
+                </div>
+                <div class="footer-item">
+                    <h3 class="heading-footer">Liên Hệ</h3>
+                    <i class="fas fa-angle-double-right"> <span>Cửa hàng tại Việt Nam</span></i>
+                    <i class="fas fa-angle-double-right"> <span>Chăm sóc khách hàng</span></i>
+                    <i class="fas fa-angle-double-right"> <span>Khuyến mãi</span></i>
+                </div>
+                <div class="footer-item">
+                    <h3 class="heading-footer">Điều Khoản Và Điều Kiện</h3>
+                    <i class="fas fa-angle-double-right"> <span>Điều khoản mua hàng</span></i>
+                    <i class="fas fa-angle-double-right"> <span>Chính sách đổi trả</span></i>
+                    <i class="fas fa-angle-double-right"> <span>Chính sách bảo mật</span></i>
+                    <i class="fas fa-angle-double-right"> <span>Bản tự công bố sản phẩm</span></i>
+                </div>
+                <div class="footer-item">
+                    <h3 class="heading-footer">Bộ Phận Tuyển Dụng</h3>
+                    <h3 style="font-weight:bold; text-transform:uppercase">Miền Nam</h3>
+                    <p style="margin:10px 0">Tel: +84 28 6288 1188 - Ext: 178</p>
+                    <p>Email: tuyendung@vmgfashion.com</p>
+                    <img class="icon-banking" src="Image/banking.png" />
+                </div>
+            </div>
+        </div>
+        <div id="coppy-right">
+            <div class="content-coppy">
+                <p>@ Coppyright 2020 Design by Me</p>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
